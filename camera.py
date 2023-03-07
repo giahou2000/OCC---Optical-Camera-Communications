@@ -8,8 +8,11 @@ while True:
     # Capture a frame
     ret, frame = cap.read()
 
+    # # binary transformation
     # grayframe = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
     # (thresh, bnwFrame) = cv2.threshold(grayframe, 127, 255, cv2.THRESH_BINARY)
+    # # Display the frame
+    # cv2.imshow('frame', bnwFrame)
 
     # Display the frame
     cv2.imshow('frame', frame)
