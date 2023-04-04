@@ -3,7 +3,7 @@ import numpy as np
 import gpiozero
 
 # create the message and convert it (if needed) to 0 and 1
-message = np.zeros(5000)
+message = np.zeros(1000000)
 for i in range(message.size):
   if (i % 2) == 0:
     message[i] = 1
