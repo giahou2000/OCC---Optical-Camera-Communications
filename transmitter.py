@@ -12,7 +12,7 @@ for i in range(message.size):
 # declare the connection (you have to connect the led to a GPIO connection)
 led = gpiozero.LED(17)
 
-space_time = 0.0003
+space_time = 0.001
 led.off()
 # send the message
 led.on()
