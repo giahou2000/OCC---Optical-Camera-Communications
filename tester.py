@@ -1,17 +1,7 @@
-lst = [1, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1]
+mylist = [1, 2, 3, 4, 5, 65, 67, 7, 87, 8, 8, 88, 8, 86, 33, 454, 543, 43, 543, 543, 3, 5, 34, 34, 53, 5, 4, 5, 435, 4, 4, 54, 3]
+print(len(mylist))
 
-current_num = lst[0]
-current_count = 1
-groups = []
-
-for num in lst[1:]:
-    if num == current_num:
-        current_count += 1
-    else:
-        groups.append((current_num, current_count))
-        current_num = num
-        current_count = 1
-
-groups.append((current_num, current_count))
-
-print(len(groups))
+for i in range(0, len(mylist), 4):
+    for j in range(i, i+4):
+        if j < len(mylist):
+            print(mylist[j])
