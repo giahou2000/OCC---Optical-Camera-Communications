@@ -20,10 +20,11 @@ sleep(10)
 led.off()
 sleep(5)
 for i in range(0, message.size, 4):
-  for j in range(i, i+4):
-    if j < message.size:
-      if message[j] == 1:
-        led.on()
-      else:
-        led.off()
-      sleep(space_time)
+  for _ in range(5):
+    for j in range(i, i+4):
+      if j < message.size:
+        if message[j] == 1:
+          led.on()
+        else:
+          led.off()
+        sleep(space_time)
